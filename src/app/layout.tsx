@@ -1,0 +1,39 @@
+import type { Metadata } from "next";
+import { Fraunces, IBM_Plex_Sans, IBM_Plex_Mono } from "next/font/google";
+import "./globals.css";
+
+const fraunces = Fraunces({
+  variable: "--font-display",
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+  style: ["normal", "italic"],
+});
+
+const plexSans = IBM_Plex_Sans({
+  variable: "--font-body",
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+});
+
+const plexMono = IBM_Plex_Mono({
+  variable: "--font-mono",
+  subsets: ["latin"],
+  weight: ["400", "500"],
+});
+
+export const metadata: Metadata = {
+  title: "Nosysoatech — Fetraniaina Désiré Rabemanantsoa",
+  description:
+    "Développeur Full Stack — Python/Django, Data et PHP. 13 ans d'expérience en e-commerce, immobilier et applications sur mesure.",
+};
+
+export default function RootLayout({ children }: LayoutProps<"/">) {
+  return (
+    <html
+      lang="fr"
+      className={`${fraunces.variable} ${plexSans.variable} ${plexMono.variable}`}
+    >
+      <body>{children}</body>
+    </html>
+  );
+}
