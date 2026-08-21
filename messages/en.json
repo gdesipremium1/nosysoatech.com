@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "title": "Nosysoatech — Fetraniaina Désiré Rabemanantsoa",
+    "description": "Full Stack Developer — Python/Django, Data and PHP. 13 years of experience in e-commerce, real estate and custom applications."
+  },
+  "nav": {
+    "specialites": "Expertise",
+    "projets": "Projects",
+    "contact": "Contact",
+    "langue": "Language"
+  },
+  "hero": {
+    "eyebrow": "Fetraniaina Désiré Rabemanantsoa",
+    "headline": "I turn human needs into digital products.",
+    "description": "<b>Full Stack Developer specialized in Python, Django and Data</b>, with 13 years of experience. I design and build web applications, APIs and business tools from data, files and complex databases, all the way to production.",
+    "chipExperience": "<b>13 years</b> of experience",
+    "chipSectors": "<b>3</b> sectors — e-commerce, real estate & custom applications",
+    "chipRemote": "Remote, <b>FR / EN</b>",
+    "ctaProjects": "View projects",
+    "ctaContact": "Get in touch"
+  },
+  "specialites": {
+    "kicker": "Expertise",
+    "title": "What I do",
+    "fullstack": {
+      "title": "Full Stack",
+      "desc": "End-to-end design — database architecture, API, interface. A single point of contact from the need to production."
+    },
+    "pythonDjango": {
+      "title": "Python & Django",
+      "desc": "Robust backends and data modeling for applications built to last, not just to launch."
+    },
+    "data": {
+      "title": "Data",
+      "desc": "Catalogs, imports/exports, migrations and large-scale data structuring — my field for 13 years."
+    },
+    "php": {
+      "title": "PHP",
+      "desc": "The backbone of my most accomplished e-commerce projects — gimoexpert runs on Symfony, backed by 13 years of Magento and PrestaShop."
+    }
+  },
+  "projets": {
+    "kicker": "Proof",
+    "title": "Projects",
+    "gimoexpert": {
+      "name": "gimoexpert",
+      "desc": "<b>E-commerce catalog generated from Excel</b> — automatic product type detection, import/export, cart and quotes. The most complete showcase of the Data expertise.",
+      "status": "In production"
+    },
+    "mag1to2": {
+      "name": "mag1to2_migration",
+      "desc": "<b>Magento 1 → 2 migration tool</b> with category and product auto-filtering. Published under the MIT license.",
+      "status": "Published tool"
+    },
+    "etoerana": {
+      "name": "e-toerana.com",
+      "desc": "<b>Real estate platform</b> — structured property catalog, built with Python/Django. Same logic as gimoexpert, applied to real estate.",
+      "status": "In development"
+    }
+  },
+  "stack": {
+    "kicker": "Also proficient in",
+    "title": "Complementary stack",
+    "cms": "CMS —",
+    "cmsValue": "WordPress, Joomla",
+    "data": "Data —",
+    "dataValue": "MySQL, PostgreSQL",
+    "deploy": "Deployment —",
+    "deployValue": "Git, CI/CD, SSH"
+  },
+  "footer": {
+    "title": "Let's work together",
+    "desc": "Migration, data catalog or custom application — tell me about the need, I'll reply with a concrete plan.",
+    "writeMessage": "Write a message",
+    "whatsapp": "WhatsApp",
+    "github": "GitHub",
+    "linkedin": "LinkedIn"
+  },
+  "float": {
+    "mail": "Write a message",
+    "call": "+261 34 71 043 38",
+    "whatsapp": "WhatsApp"
+  },
+  "contact": {
+    "kicker": "Contact",
+    "title": "Get in touch",
+    "subtitle": "Reply within 24–48h, at <mono>infos@nosysoatech.com</mono>.",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send",
+    "or": "or",
+    "mailtoLink": "Write directly from your mail client",
+    "successTitle": "Message sent.",
+    "successDesc": "I'll reply within 24–48h at the address you provided.",
+    "close": "Close",
+    "errorFallback": "Failed to send. Try again or email infos@nosysoatech.com."
+  }
+}

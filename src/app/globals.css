@@ -97,13 +97,39 @@ a {
   z-index: 1;
 }
 
-/* ---- nav ---- */
+/* ---- nav: fixed, floats over the hero, solidifies on scroll ---- */
+/* full-width background layer, fixed, floats over the hero, solidifies
+   edge-to-edge on scroll. nav itself (below) is untouched -- same
+   max-width/padding/layout as before, just sitting on top of this. */
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 40;
+  background: transparent;
+  border-bottom: 1px solid transparent;
+  transition: background 0.25s ease, border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+.nav-bar.nav-scrolled {
+  background: var(--card);
+  border-bottom-color: var(--line);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+.nav-spacer {
+  height: 72px;
+}
+
+/* nav (unchanged: same layout/spacing/position within the bar) */
 nav {
+  max-width: 980px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 26px 0;
   gap: 20px;
+  padding: 18px 28px;
 }
 .wordmark {
   font-family: var(--font-mono), ui-monospace, monospace;
@@ -224,6 +250,17 @@ header.hero {
   background: var(--blue);
 }
 h1 {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--ink-soft);
+  max-width: 56ch;
+  margin: 0 0 34px;
+}
+h1 b {
+  color: var(--ink);
+  font-weight: 600;
+}
+.hero-sub {
   font-family: var(--font-display), Georgia, serif;
   font-optical-sizing: auto;
   font-weight: 500;
@@ -233,16 +270,8 @@ h1 {
   margin: 0 0 22px;
   max-width: 15ch;
   text-wrap: balance;
-}
-.hero-sub {
-  font-size: 18px;
-  color: var(--ink-soft);
-  max-width: 56ch;
-  margin: 0 0 34px;
-}
-.hero-sub b {
   color: var(--ink);
-  font-weight: 600;
+  display: block;
 }
 
 .chiprow {
@@ -450,13 +479,306 @@ footer p {
 }
 .foot-links {
   display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.foot-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 13px;
+  color: var(--ink-soft);
+}
+.foot-info a {
+  color: var(--ink-soft);
+  text-decoration: none;
+}
+.foot-info a:hover {
+  color: var(--blue);
+}
+.foot-info .foot-sep {
+  color: var(--ink-faint);
+}
+.foot-actions {
+  display: flex;
+  flex-wrap: wrap;
   gap: 20px;
   font-family: var(--font-mono), ui-monospace, monospace;
   font-size: 13px;
 }
-.foot-links a {
+.foot-actions a {
   color: var(--blue);
   text-decoration: none;
+}
+.foot-link-btn {
+  color: var(--blue);
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 13px;
+}
+.foot-link-btn:hover {
+  text-decoration: underline;
+}
+
+/* ---- floating contact stack: mail / phone / whatsapp ---- */
+.float-stack {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 30;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.float-btn {
+  position: relative;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--card);
+  border: 1px solid var(--line);
+  color: var(--ink);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+  transition: transform 0.15s ease, border-color 0.15s ease;
+  cursor: pointer;
+  padding: 0;
+  font: inherit;
+  appearance: none;
+}
+.float-btn:hover,
+.float-btn:focus-visible {
+  transform: scale(1.06);
+  border-color: var(--blue);
+}
+.float-btn svg {
+  width: 22px;
+  height: 22px;
+}
+.float-btn.wa {
+  background: #25d366;
+  border-color: #25d366;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.28);
+}
+.float-btn.wa:hover {
+  border-color: #1ebe5b;
+}
+.float-btn[data-tip]::after {
+  content: attr(data-tip);
+  position: absolute;
+  right: calc(100% + 12px);
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--card);
+  border: 1px solid var(--line);
+  color: var(--ink);
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 12px;
+  white-space: nowrap;
+  padding: 6px 10px;
+  border-radius: 3px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s ease;
+}
+.float-btn[data-tip]:hover::after,
+.float-btn[data-tip]:focus-visible::after {
+  opacity: 1;
+}
+
+/* ---- contact modal ---- */
+dialog.contact-modal {
+  border: none;
+  padding: 0;
+  border-radius: 4px;
+  background: var(--card);
+  color: var(--ink);
+  width: min(440px, calc(100vw - 48px));
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.3);
+}
+dialog.contact-modal::backdrop {
+  background: rgba(10, 13, 8, 0.55);
+}
+:root:not([data-theme="light"]) dialog.contact-modal::backdrop {
+  background: rgba(0, 0, 0, 0.7);
+}
+:root[data-theme="dark"] dialog.contact-modal::backdrop {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.cm-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 24px 22px 4px 24px;
+}
+.cm-head h2 {
+  font-size: 22px;
+}
+.cm-close {
+  background: none;
+  border: none;
+  font-size: 24px;
+  line-height: 1;
+  color: var(--ink-faint);
+  cursor: pointer;
+  padding: 2px 6px;
+}
+.cm-close:hover {
+  color: var(--ink);
+}
+.cm-sub {
+  padding: 0 24px;
+  font-size: 13.5px;
+  color: var(--ink-soft);
+  margin: 0 0 18px;
+}
+.cm-sub .mono {
+  font-family: var(--font-mono), ui-monospace, monospace;
+  color: var(--ink);
+}
+
+.cm-body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0 24px 26px;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--ink-soft);
+}
+.field input,
+.field textarea {
+  font-family: var(--font-body), sans-serif;
+  font-size: 14.5px;
+  color: var(--ink);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  padding: 9px 11px;
+  resize: vertical;
+}
+.field input:focus,
+.field textarea:focus {
+  outline: 2px solid var(--blue);
+  outline-offset: 1px;
+}
+
+.cm-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  margin-top: 4px;
+}
+.cm-submit:disabled {
+  cursor: default;
+}
+.cm-error {
+  margin: -4px 0 0;
+  font-size: 13px;
+  color: #b3261e;
+}
+:root:not([data-theme="light"]) .cm-error {
+  color: #f2938b;
+}
+:root[data-theme="dark"] .cm-error {
+  color: #f2938b;
+}
+.cm-alt {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 2px 0;
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ink-faint);
+}
+.cm-alt-line {
+  flex: 1;
+  height: 1px;
+  background: var(--line);
+}
+.cm-mailto {
+  display: block;
+  text-align: center;
+  font-size: 13.5px;
+  color: var(--blue);
+  text-decoration: none;
+}
+.cm-mailto:hover {
+  text-decoration: underline;
+}
+
+.cm-spinner {
+  display: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid color-mix(in srgb, var(--paper) 35%, transparent);
+  border-top-color: var(--paper);
+  animation: cm-spin 0.7s linear infinite;
+}
+.cm-submit[data-loading="true"] .cm-spinner {
+  display: inline-block;
+}
+.cm-submit[data-loading="true"] .cm-submit-label {
+  opacity: 0.75;
+}
+@keyframes cm-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .cm-spinner {
+    animation: none;
+    opacity: 0.6;
+  }
+}
+
+.cm-success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 14px;
+  padding: 38px 26px 32px;
+}
+.cm-success-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--blue);
+  border: 1px solid var(--blue);
+  font-size: 17px;
+}
+.cm-success p {
+  margin: 0;
+  font-size: 14.5px;
+  color: var(--ink-soft);
+}
+.cm-success p b {
+  color: var(--ink);
 }
 
 @media (max-width: 900px) {

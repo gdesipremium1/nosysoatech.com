@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "title": "Nosysoatech — Fetraniaina Désiré Rabemanantsoa",
+    "description": "Mpamorona rafitra Full Stack — Python/Django, Data ary PHP. Traikefa 13 taona amin'ny e-commerce, fananan-tany ary rindrankajy manokana."
+  },
+  "nav": {
+    "specialites": "Fahaizana",
+    "projets": "Tetikasa",
+    "contact": "Fifandraisana",
+    "langue": "Fiteny"
+  },
+  "hero": {
+    "eyebrow": "Fetraniaina Désiré Rabemanantsoa",
+    "headline": "Manova ny filàn'olona ho vokatra nomerika aho.",
+    "description": "Mpamorona rafitra <b>Full Stack manam-pahaizana manokana amin'ny Python, Django ary Data</b>, manana traikefa 13 taona. Mamorona sy mampivelatra tranonkala, API ary fitaovana ho an'ny orinasa aho, miorina amin'ny angona, rakitra ary angon-drakitra sarotra, hatramin'ny fampiharana azy ireo.",
+    "chipExperience": "<b>13 taona</b> traikefa",
+    "chipSectors": "<b>3</b> sehatra — e-commerce, fananan-tany ary rindrankajy manokana",
+    "chipRemote": "Remote, <b>FR / EN</b>",
+    "ctaProjects": "Jereo ny tetikasa",
+    "ctaContact": "Mifandraisa amiko"
+  },
+  "specialites": {
+    "kicker": "Fahaizana",
+    "title": "Izay ataoko",
+    "fullstack": {
+      "title": "Full Stack",
+      "desc": "Famoronana feno, hatramin'ny fototra angon-drakitra ka hatramin'ny API sy ny interface. Mpiara-miasa iray ihany hatramin'ny filàna ka hatramin'ny fampiharana."
+    },
+    "pythonDjango": {
+      "title": "Python & Django",
+      "desc": "Rafitra matanjaka ary famolavolana angona ho an'ny rindrankajy tokony haharitra, tsy hoe hanomboka fotsiny."
+    },
+    "data": {
+      "title": "Data",
+      "desc": "Katalaogy, fanafarana/fandefasana angona, fifindran-toerana ary firafitry ny angona lehibe — sehatra iasako hatramin'ny 13 taona."
+    },
+    "php": {
+      "title": "PHP",
+      "desc": "Fototry ny tetikasa e-commerce tsara indrindra nataoko — gimoexpert dia mampiasa Symfony, miaraka amin'ny traikefa 13 taona amin'ny Magento sy PrestaShop."
+    }
+  },
+  "projets": {
+    "kicker": "Porofo",
+    "title": "Tetikasa",
+    "gimoexpert": {
+      "name": "gimoexpert",
+      "desc": "<b>Katalaogy e-commerce noforonina avy amin'ny Excel</b> — famantarana ho azy ny karazana vokatra, fanafarana/fandefasana, sobiky ary tolo-bidy. Ohatra tsara indrindra manasongadina ny fahaizana amin'ny Data.",
+      "status": "Miasa"
+    },
+    "mag1to2": {
+      "name": "mag1to2_migration",
+      "desc": "<b>Fitaovana famindrana Magento 1 → 2</b> miaraka amin'ny sivana ho azy ny sokajy sy vokatra. Navoaka amin'ny fahazoan-dàlana MIT.",
+      "status": "Fitaovana navoaka"
+    },
+    "etoerana": {
+      "name": "e-toerana.com",
+      "desc": "<b>Sehatra momba ny fananan-tany</b> — katalaogin'ny fananana voarafitra, natao tamin'ny Python/Django. Fomba mitovy amin'ny gimoexpert, ampiharina amin'ny fananan-tany.",
+      "status": "Am-panatanterahana"
+    }
+  },
+  "stack": {
+    "kicker": "Fantatro ihany koa",
+    "title": "Fitaovana fanampiny",
+    "cms": "CMS —",
+    "cmsValue": "WordPress, Joomla",
+    "data": "Angona —",
+    "dataValue": "MySQL, PostgreSQL",
+    "deploy": "Famoahana —",
+    "deployValue": "Git, CI/CD, SSH"
+  },
+  "footer": {
+    "title": "Andao hiara-hiasa",
+    "desc": "Famindrana, katalaogin'angona na rindrankajy manokana — lazao amiko ny filànao, hamaly aho miaraka amin'ny drafitra mazava.",
+    "writeMessage": "Manorata hafatra",
+    "whatsapp": "WhatsApp",
+    "github": "GitHub",
+    "linkedin": "LinkedIn"
+  },
+  "float": {
+    "mail": "Manorata hafatra",
+    "call": "+261 34 71 043 38",
+    "whatsapp": "WhatsApp"
+  },
+  "contact": {
+    "kicker": "Fifandraisana",
+    "title": "Mifandraisa amiko",
+    "subtitle": "Valiny ao anatin'ny 24–48 ora, ao amin'ny <mono>infos@nosysoatech.com</mono>.",
+    "name": "Anarana",
+    "email": "Mailaka",
+    "message": "Hafatra",
+    "send": "Alefaso",
+    "or": "na",
+    "mailtoLink": "Manorata mivantana avy amin'ny mailakao",
+    "successTitle": "Voalefa ny hafatra.",
+    "successDesc": "Hamaly ao anatin'ny 24–48 ora aho amin'ny adiresy nomenao.",
+    "close": "Hidio",
+    "errorFallback": "Tsy voalefa. Andramo indray na manorata any amin'ny infos@nosysoatech.com."
+  }
+}
