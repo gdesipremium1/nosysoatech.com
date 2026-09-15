@@ -136,7 +136,7 @@ export default function Home() {
             <div className="idrow">
               <Image
                 className="avatar"
-                src="/avatar.png"
+                src="/avatar.jpg"
                 alt={t("hero.eyebrow")}
                 width={52}
                 height={52}
