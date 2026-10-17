@@ -1,77 +1,102 @@
 {
   "meta": {
     "title": "Nosysoatech — Fetraniaina Désiré Rabemanantsoa",
-    "description": "Mpamorona rafitra Full Stack — Python/Django, Data ary PHP. Traikefa 13 taona amin'ny e-commerce, fananan-tany ary rindrankajy manokana."
+    "description": "Mpamorona rafitra full-stack zokiolona Symfony / Django / React, traikefa 14 taona. Fanampiana ekipa amin'ny alalan'ny régie, miasa lavitra tanteraka ho an'ny ESN sy ekipa teknika."
   },
   "nav": {
     "specialites": "Fahaizana",
+    "esn": "ESN sy régie",
     "projets": "Tetikasa",
     "contact": "Fifandraisana",
     "langue": "Fiteny"
   },
   "hero": {
     "eyebrow": "Fetraniaina Désiré Rabemanantsoa",
-    "headline": "Manova ny filàn'olona ho vokatra nomerika aho.",
-    "description": "Mpamorona rafitra <b>Full Stack manam-pahaizana manokana amin'ny Python, Django ary Data</b>, manana traikefa 13 taona. Mamorona sy mampivelatra tranonkala, API ary fitaovana ho an'ny orinasa aho, miorina amin'ny angona, rakitra ary angon-drakitra sarotra, hatramin'ny fampiharana azy ireo.",
-    "chipExperience": "<b>13 taona</b> traikefa",
-    "chipSectors": "<b>3</b> sehatra — e-commerce, fananan-tany ary rindrankajy manokana",
-    "chipRemote": "Remote, <b>FR / EN</b>",
-    "ctaProjects": "Jereo ny tetikasa",
-    "ctaContact": "Mifandraisa amiko"
+    "availability": "Vonona amin'ny régie, afaka manomboka ao anatin'ny herinandro",
+    "headline": "Mpamorona rafitra full-stack zokiolona Symfony / Django / React, manampy ny ekipanao, miasa lavitra tanteraka",
+    "description": "<b>Traikefa 14 taona</b> amin'ny rindrankajy ho an'ny orinasa, API ary angona. Miasa amin'ny maha mpiara-miombon'antoka ahy ho an'ny <b>ESN</b> sy ekipa teknika frantsay aho.",
+    "location": "Antananarivo, UTC+3",
+    "metrics": {
+      "experience": "14 taona",
+      "experienceLabel": "traikefa",
+      "timezone": "UTC+3",
+      "timezoneLabel": "1 ka hatramin'ny 2 ora miala amin'i Paris",
+      "language": "Frantsay",
+      "languageLabel": "mahay tsara, matihanina",
+      "reply": "24 ora",
+      "replyLabel": "faharetan'ny valiny"
+    },
+    "ctaCv": "Mangataka ny CV-ko",
+    "ctaCall": "Handamina antso"
   },
   "specialites": {
     "kicker": "Fahaizana",
-    "title": "Izay ataoko",
-    "fullstack": {
-      "title": "Full Stack",
-      "desc": "Famoronana feno, hatramin'ny fototra angon-drakitra ka hatramin'ny API sy ny interface. Mpiara-miasa iray ihany hatramin'ny filàna ka hatramin'ny fampiharana."
+    "title": "Andry roa sy fahaizana manokana iray",
+    "backend": {
+      "title": "Back-end Symfony / Django",
+      "desc": "API REST, firafitry ny rafitra, famolavolana angona ary hafainganam-pandehan'ny SQL. Symfony hatramin'ny dikan-teny 2, Django ho an'ny sehatra angona."
     },
-    "pythonDjango": {
-      "title": "Python & Django",
-      "desc": "Rafitra matanjaka ary famolavolana angona ho an'ny rindrankajy tokony haharitra, tsy hoe hanomboka fotsiny."
+    "frontend": {
+      "title": "Front-end React",
+      "desc": "Interface ho an'ny orinasa sy tabilao fanaraha-maso amin'ny React, TypeScript ary Next.js, mifandray tsara amin'ny API-nao."
     },
     "data": {
-      "title": "Data",
-      "desc": "Katalaogy, fanafarana/fandefasana angona, fifindran-toerana ary firafitry ny angona lehibe — sehatra iasako hatramin'ny 13 taona."
+      "title": "Angona sy tatitra",
+      "desc": "Tondro, fikarohana sarotra, fanafarana sy fandefasana Excel ary famindrana angona lehibe."
     },
-    "php": {
-      "title": "PHP",
-      "desc": "Fototry ny tetikasa e-commerce tsara indrindra nataoko — gimoexpert dia mampiasa Symfony, miaraka amin'ny traikefa 13 taona amin'ny Magento sy PrestaShop."
+    "also": "Ary koa: Magento 1/2, PrestaShop, PostgreSQL, Docker, PHPUnit, PHPStan, LDAP / Active Directory"
+  },
+  "esn": {
+    "kicker": "ESN sy régie",
+    "title": "Fanampiana azo antoka, tsy misy tsy ampoizina",
+    "desc": "Mpamorona zokiolona ho an'ny tolo-bidinao sy ny filàna maika, amin'ny saran'asa mamela tombony ho anao.",
+    "steps": {
+      "cv": {
+        "title": "CV ao anatin'ny 24 ora",
+        "desc": "Araka ny endrika ilain'ny tolo-bidinao."
+      },
+      "interview": {
+        "title": "Resaka amin'ny mpanjifa",
+        "desc": "Amin'ny visio, amin'ny teny frantsay."
+      },
+      "start": {
+        "title": "Fanombohana",
+        "desc": "Ao anatin'ny herinandro, manontolo andro na tapany."
+      },
+      "report": {
+        "title": "CRA isam-bolana",
+        "desc": "Tatitry ny asa sy faktiora mazava."
+      }
     }
   },
   "projets": {
     "kicker": "Porofo",
-    "title": "Tetikasa",
+    "title": "Tetikasa vao haingana",
+    "labo": {
+      "name": "Fanaraha-maso laboratoara",
+      "desc": "<b>Sehatra fanaraha-maso ho an'ny laboratoara fandalinana</b>, mifandray mivantana amin'ny LIMS an'ny mpanjifa: tondro maherin'ny 20 azo amboarina tsy mila kaody, fidirana amin'ny Active Directory.",
+      "status": "Mpanjifa tsiambaratelo"
+    },
     "gimoexpert": {
       "name": "gimoexpert",
-      "desc": "<b>Katalaogy e-commerce noforonina avy amin'ny Excel</b> — famantarana ho azy ny karazana vokatra, fanafarana/fandefasana, sobiky ary tolo-bidy. Ohatra tsara indrindra manasongadina ny fahaizana amin'ny Data.",
+      "desc": "<b>Katalaogy e-commerce noforonina avy amin'ny Excel</b>: famantarana ho azy ny karazana vokatra, fanafarana/fandefasana, sobiky ary tolo-bidy.",
       "status": "Miasa"
-    },
-    "mag1to2": {
-      "name": "mag1to2_migration",
-      "desc": "<b>Fitaovana famindrana Magento 1 → 2</b> miaraka amin'ny sivana ho azy ny sokajy sy vokatra. Navoaka amin'ny fahazoan-dàlana MIT.",
-      "status": "Fitaovana navoaka"
     },
     "etoerana": {
       "name": "e-toerana.com",
-      "desc": "<b>Sehatra momba ny fananan-tany</b> — katalaogin'ny fananana voarafitra, natao tamin'ny Python/Django. Fomba mitovy amin'ny gimoexpert, ampiharina amin'ny fananan-tany.",
+      "desc": "<b>Sehatra momba ny fananan-tany</b>: katalaogin'ny fananana voarafitra, fomba mitovy amin'ny gimoexpert ampiharina amin'ny fananan-tany.",
       "status": "Am-panatanterahana"
+    },
+    "mag1to2": {
+      "name": "mag1to2_migration",
+      "desc": "<b>Fitaovana famindrana Magento 1 → 2</b> miaraka amin'ny sivana ho azy ny sokajy sy ny vokatra.",
+      "status": "Fahazoan-dàlana MIT"
     }
   },
-  "stack": {
-    "kicker": "Fantatro ihany koa",
-    "title": "Fitaovana fanampiny",
-    "cms": "CMS —",
-    "cmsValue": "WordPress, Joomla",
-    "data": "Angona —",
-    "dataValue": "MySQL, PostgreSQL",
-    "deploy": "Famoahana —",
-    "deployValue": "Git, CI/CD, SSH"
-  },
   "footer": {
-    "title": "Andao hiara-hiasa",
-    "desc": "Famindrana, katalaogin'angona na rindrankajy manokana — lazao amiko ny filànao, hamaly aho miaraka amin'ny drafitra mazava.",
-    "writeMessage": "Manorata hafatra",
+    "title": "Mila mpamorona Symfony, Django na React ve ianao?",
+    "desc": "Alefaso amiko ny filàna: hamaly ao anatin'ny 24 ora aho miaraka amin'ny CV mifanaraka.",
+    "writeMessage": "Handefa filàna",
     "whatsapp": "WhatsApp",
     "github": "GitHub",
     "linkedin": "LinkedIn"
@@ -84,15 +109,15 @@
   "contact": {
     "kicker": "Fifandraisana",
     "title": "Mifandraisa amiko",
-    "subtitle": "Valiny ao anatin'ny 24–48 ora, ao amin'ny <mono>infos@nosysoatech.com</mono>.",
+    "subtitle": "Valiny ao anatin'ny 24 ora, ao amin'ny <mono>infos@nosysoatech.com</mono>.",
     "name": "Anarana",
     "email": "Mailaka",
-    "message": "Hafatra",
+    "message": "Hafatra (filàna, famaritana ny asa, fangatahana CV…)",
     "send": "Alefaso",
     "or": "na",
     "mailtoLink": "Manorata mivantana avy amin'ny mailakao",
     "successTitle": "Voalefa ny hafatra.",
-    "successDesc": "Hamaly ao anatin'ny 24–48 ora aho amin'ny adiresy nomenao.",
+    "successDesc": "Hamaly ao anatin'ny 24 ora aho amin'ny adiresy nomenao.",
     "close": "Hidio",
     "errorFallback": "Tsy voalefa. Andramo indray na manorata any amin'ny infos@nosysoatech.com."
   }

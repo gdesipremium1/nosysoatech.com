@@ -1,0 +1,9 @@
+services:
+  web:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - RESEND_API_KEY=${RESEND_API_KEY}
+      - CONTACT_FROM_EMAIL=${CONTACT_FROM_EMAIL}
+      - CONTACT_TO_EMAIL=${CONTACT_TO_EMAIL}

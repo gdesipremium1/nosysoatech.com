@@ -99,14 +99,18 @@ export default function Home() {
       <div className="wrap">
         <div className={scrolled ? "nav-bar nav-scrolled" : "nav-bar"}>
           <nav>
-            <div className="wordmark">
-              <span className="wm-nosy">nosy</span>
-              <span className="wm-soa">soa</span>
-              <span className="wm-tech">tech</span>
-            </div>
+            <a className="brand" href="#">
+              <Image className="brand-icon" src="/logo-icon.png" alt="" width={28} height={28} />
+              <span className="wordmark">
+                <span className="wm-nosy">nosy</span>
+                <span className="wm-soa">soa</span>
+                <span className="wm-tech">tech</span>
+              </span>
+            </a>
             <div className="navright">
               <div className="navlinks">
                 <a href="#specialites">{t("nav.specialites")}</a>
+                <a href="#esn">{t("nav.esn")}</a>
                 <a href="#projets">{t("nav.projets")}</a>
                 <a href="#contact">{t("nav.contact")}</a>
               </div>
@@ -133,32 +137,43 @@ export default function Home() {
 
         <header className="hero">
           <div className="hero-inner">
-            <div className="idrow">
-              <Image
-                className="avatar"
-                src="/avatar.jpg"
-                alt={t("hero.eyebrow")}
-                width={52}
-                height={52}
-              />
-              <div className="eyebrow" style={{ marginBottom: 0 }}>
-                {t("hero.eyebrow")}
+            <div className="hero-grid">
+              <div>
+                <span className="availability">
+                  <span className="availability-dot" aria-hidden="true" />
+                  {t("hero.availability")}
+                </span>
+                <div className="eyebrow">{t("hero.eyebrow")}</div>
+                <p className="hero-sub">{t("hero.headline")}</p>
+                <h1>{t.rich("hero.description", { b: Bold })}</h1>
+                <div className="cta-row">
+                  <button type="button" className="btn primary" onClick={openContact}>
+                    {t("hero.ctaCv")}
+                  </button>
+                  <a className="btn ghost" href="https://wa.me/261347104338" target="_blank" rel="noopener">
+                    {t("hero.ctaCall")}
+                  </a>
+                </div>
+              </div>
+              <div className="hero-photo">
+                <Image
+                  className="avatar"
+                  src="/avatar.jpg"
+                  alt={t("hero.eyebrow")}
+                  width={168}
+                  height={168}
+                  priority
+                />
+                <span className="hero-location">{t("hero.location")}</span>
               </div>
             </div>
-            <p className="hero-sub">{t("hero.headline")}</p>
-            <h1>{t.rich("hero.description", { b: Bold })}</h1>
-            <div className="chiprow">
-              <span className="chip">{t.rich("hero.chipExperience", { b: Bold })}</span>
-              <span className="chip">{t.rich("hero.chipSectors", { b: Bold })}</span>
-              <span className="chip">{t.rich("hero.chipRemote", { b: Bold })}</span>
-            </div>
-            <div className="cta-row">
-              <a className="btn primary" href="#projets">
-                {t("hero.ctaProjects")}
-              </a>
-              <button type="button" className="btn ghost" onClick={openContact}>
-                {t("hero.ctaContact")}
-              </button>
+            <div className="metrics">
+              {(["experience", "timezone", "language", "reply"] as const).map((k) => (
+                <div className="metric" key={k}>
+                  <b>{t(`hero.metrics.${k}`)}</b>
+                  <span>{t(`hero.metrics.${k}Label`)}</span>
+                </div>
+              ))}
             </div>
           </div>
         </header>
@@ -171,22 +186,25 @@ export default function Home() {
           <div className="pillars">
             <div className="pillar">
               <span className="pnum">01</span>
-              <h3>{t("specialites.fullstack.title")}</h3>
-              <p>{t("specialites.fullstack.desc")}</p>
+              <h3>{t("specialites.backend.title")}</h3>
+              <p>{t("specialites.backend.desc")}</p>
               <div className="stack">
-                <span>TypeScript</span>
-                <span>React / Next.js</span>
-                <span>PostgreSQL</span>
+                <span>PHP 8 / Symfony 7</span>
+                <span>Python / Django</span>
+                <span>Doctrine</span>
+                <span>REST API</span>
+                <span>MySQL</span>
               </div>
             </div>
             <div className="pillar">
               <span className="pnum">02</span>
-              <h3>{t("specialites.pythonDjango.title")}</h3>
-              <p>{t("specialites.pythonDjango.desc")}</p>
+              <h3>{t("specialites.frontend.title")}</h3>
+              <p>{t("specialites.frontend.desc")}</p>
               <div className="stack">
-                <span>Python</span>
-                <span>Django</span>
-                <span>REST API</span>
+                <span>React</span>
+                <span>TypeScript</span>
+                <span>Next.js</span>
+                <span>Tailwind</span>
               </div>
             </div>
             <div className="pillar">
@@ -194,22 +212,31 @@ export default function Home() {
               <h3>{t("specialites.data.title")}</h3>
               <p>{t("specialites.data.desc")}</p>
               <div className="stack">
+                <span>SQL</span>
                 <span>ETL / Import</span>
-                <span>Migration BDD</span>
-                <span>Modélisation</span>
-              </div>
-            </div>
-            <div className="pillar">
-              <span className="pnum">04</span>
-              <h3>{t("specialites.php.title")}</h3>
-              <p>{t("specialites.php.desc")}</p>
-              <div className="stack">
-                <span>Symfony</span>
-                <span>Magento</span>
-                <span>PrestaShop</span>
+                <span>Dashboards</span>
+                <span>Excel</span>
               </div>
             </div>
           </div>
+          <p className="also">{t("specialites.also")}</p>
+        </section>
+
+        <section id="esn" className="esn">
+          <div className="sec-head">
+            <span className="kicker">{t("esn.kicker")}</span>
+            <h2>{t("esn.title")}</h2>
+            <p className="sec-desc">{t("esn.desc")}</p>
+          </div>
+          <ol className="steps">
+            {(["cv", "interview", "start", "report"] as const).map((k, i) => (
+              <li className="step" key={k}>
+                <span className="pnum">0{i + 1}</span>
+                <b>{t(`esn.steps.${k}.title`)}</b>
+                <span>{t(`esn.steps.${k}.desc`)}</span>
+              </li>
+            ))}
+          </ol>
         </section>
 
         <section id="projets">
@@ -219,38 +246,52 @@ export default function Home() {
           </div>
           <div className="projects">
             <div className="proj">
+              <div className="pname">{t("projets.labo.name")}</div>
+              <div className="pdesc">
+                {t.rich("projets.labo.desc", { b: Bold })}
+                <div className="ptags">
+                  <span>Symfony 7</span>
+                  <span>React / TS</span>
+                  <span>MySQL</span>
+                  <span>LDAP</span>
+                </div>
+              </div>
+              <span className="status conf">{t("projets.labo.status")}</span>
+            </div>
+            <div className="proj">
               <div className="pname">{t("projets.gimoexpert.name")}</div>
-              <div className="pdesc">{t.rich("projets.gimoexpert.desc", { b: Bold })}</div>
+              <div className="pdesc">
+                {t.rich("projets.gimoexpert.desc", { b: Bold })}
+                <div className="ptags">
+                  <span>Symfony</span>
+                  <span>Excel</span>
+                </div>
+              </div>
               <span className="status live">{t("projets.gimoexpert.status")}</span>
             </div>
             <div className="proj">
-              <div className="pname">{t("projets.mag1to2.name")}</div>
-              <div className="pdesc">{t.rich("projets.mag1to2.desc", { b: Bold })}</div>
-              <span className="status live">{t("projets.mag1to2.status")}</span>
-            </div>
-            <div className="proj">
               <div className="pname">{t("projets.etoerana.name")}</div>
-              <div className="pdesc">{t.rich("projets.etoerana.desc", { b: Bold })}</div>
+              <div className="pdesc">
+                {t.rich("projets.etoerana.desc", { b: Bold })}
+                <div className="ptags">
+                  <span>Python</span>
+                  <span>Django</span>
+                  <span>PostgreSQL</span>
+                </div>
+              </div>
               <span className="status wip">{t("projets.etoerana.status")}</span>
             </div>
-          </div>
-        </section>
-
-        <section id="stack">
-          <div className="sec-head">
-            <span className="kicker">{t("stack.kicker")}</span>
-            <h2>{t("stack.title")}</h2>
-          </div>
-          <div className="stackstrip">
-            <span>
-              <span className="lbl">{t("stack.cms")}</span> <b>{t("stack.cmsValue")}</b>
-            </span>
-            <span>
-              <span className="lbl">{t("stack.data")}</span> <b>{t("stack.dataValue")}</b>
-            </span>
-            <span>
-              <span className="lbl">{t("stack.deploy")}</span> <b>{t("stack.deployValue")}</b>
-            </span>
+            <div className="proj">
+              <div className="pname">{t("projets.mag1to2.name")}</div>
+              <div className="pdesc">
+                {t.rich("projets.mag1to2.desc", { b: Bold })}
+                <div className="ptags">
+                  <span>PHP</span>
+                  <span>Magento</span>
+                </div>
+              </div>
+              <span className="status live">{t("projets.mag1to2.status")}</span>
+            </div>
           </div>
         </section>
 

@@ -1,77 +1,102 @@
 {
   "meta": {
     "title": "Nosysoatech — Fetraniaina Désiré Rabemanantsoa",
-    "description": "Full Stack Developer — Python/Django, Data and PHP. 13 years of experience in e-commerce, real estate and custom applications."
+    "description": "Senior full-stack developer Symfony / Django / React, 14 years of experience. Fully remote staff augmentation for IT consulting firms and technical teams."
   },
   "nav": {
     "specialites": "Expertise",
+    "esn": "For IT firms",
     "projets": "Projects",
     "contact": "Contact",
     "langue": "Language"
   },
   "hero": {
     "eyebrow": "Fetraniaina Désiré Rabemanantsoa",
-    "headline": "I turn human needs into digital products.",
-    "description": "<b>Full Stack Developer specialized in Python, Django and Data</b>, with 13 years of experience. I design and build web applications, APIs and business tools from data, files and complex databases, all the way to production.",
-    "chipExperience": "<b>13 years</b> of experience",
-    "chipSectors": "<b>3</b> sectors — e-commerce, real estate & custom applications",
-    "chipRemote": "Remote, <b>FR / EN</b>",
-    "ctaProjects": "View projects",
-    "ctaContact": "Get in touch"
+    "availability": "Available for contract work, can start within a week",
+    "headline": "Senior full-stack developer Symfony / Django / React, extending your team, fully remote",
+    "description": "<b>14 years of experience</b> building business applications, APIs and data tools. I work as a subcontractor for <b>IT consulting firms</b> and technical teams.",
+    "location": "Antananarivo, UTC+3",
+    "metrics": {
+      "experience": "14 years",
+      "experienceLabel": "of experience",
+      "timezone": "UTC+3",
+      "timezoneLabel": "1–2 h from Paris",
+      "language": "French",
+      "languageLabel": "fluent, professional",
+      "reply": "24 h",
+      "replyLabel": "response time"
+    },
+    "ctaCv": "Get my resume",
+    "ctaCall": "Schedule a call"
   },
   "specialites": {
     "kicker": "Expertise",
-    "title": "What I do",
-    "fullstack": {
-      "title": "Full Stack",
-      "desc": "End-to-end design — database architecture, API, interface. A single point of contact from the need to production."
+    "title": "Two pillars and a specialty",
+    "backend": {
+      "title": "Back-end Symfony / Django",
+      "desc": "REST APIs, architecture, data modeling and SQL performance. Symfony since version 2, Django for data platforms."
     },
-    "pythonDjango": {
-      "title": "Python & Django",
-      "desc": "Robust backends and data modeling for applications built to last, not just to launch."
+    "frontend": {
+      "title": "Front-end React",
+      "desc": "Business interfaces and dashboards in React, TypeScript and Next.js, cleanly wired to your APIs."
     },
     "data": {
-      "title": "Data",
-      "desc": "Catalogs, imports/exports, migrations and large-scale data structuring — my field for 13 years."
+      "title": "Data and reporting",
+      "desc": "KPIs, complex queries, Excel imports/exports and large-scale data migrations."
     },
-    "php": {
-      "title": "PHP",
-      "desc": "The backbone of my most accomplished e-commerce projects — gimoexpert runs on Symfony, backed by 13 years of Magento and PrestaShop."
+    "also": "Also: Magento 1/2, PrestaShop, PostgreSQL, Docker, PHPUnit, PHPStan, LDAP / Active Directory"
+  },
+  "esn": {
+    "kicker": "For IT firms",
+    "title": "Reliable reinforcement, no surprises",
+    "desc": "A senior profile for your bids and urgent needs, at a rate that leaves you a healthy margin.",
+    "steps": {
+      "cv": {
+        "title": "Resume within 24 h",
+        "desc": "Formatted for your bids."
+      },
+      "interview": {
+        "title": "Client interview",
+        "desc": "By video call, in French or English."
+      },
+      "start": {
+        "title": "Start",
+        "desc": "Within a week, full or part time."
+      },
+      "report": {
+        "title": "Monthly timesheet",
+        "desc": "Activity report and clear invoice."
+      }
     }
   },
   "projets": {
     "kicker": "Proof",
-    "title": "Projects",
+    "title": "Recent projects",
+    "labo": {
+      "name": "Lab steering",
+      "desc": "<b>Steering platform for an analytical laboratory</b>, connected in real time to the client's LIMS: 20+ KPIs configurable without code, Active Directory authentication.",
+      "status": "Confidential client"
+    },
     "gimoexpert": {
       "name": "gimoexpert",
-      "desc": "<b>E-commerce catalog generated from Excel</b> — automatic product type detection, import/export, cart and quotes. The most complete showcase of the Data expertise.",
-      "status": "In production"
-    },
-    "mag1to2": {
-      "name": "mag1to2_migration",
-      "desc": "<b>Magento 1 → 2 migration tool</b> with category and product auto-filtering. Published under the MIT license.",
-      "status": "Published tool"
+      "desc": "<b>E-commerce catalog generated from Excel</b>: automatic product-type detection, import/export, cart and quotes.",
+      "status": "Live"
     },
     "etoerana": {
       "name": "e-toerana.com",
-      "desc": "<b>Real estate platform</b> — structured property catalog, built with Python/Django. Same logic as gimoexpert, applied to real estate.",
+      "desc": "<b>Real estate platform</b>: structured property catalog, the gimoexpert approach applied to real estate.",
       "status": "In development"
+    },
+    "mag1to2": {
+      "name": "mag1to2_migration",
+      "desc": "<b>Magento 1 → 2 migration tool</b> with automatic category and product filtering.",
+      "status": "MIT license"
     }
   },
-  "stack": {
-    "kicker": "Also proficient in",
-    "title": "Complementary stack",
-    "cms": "CMS —",
-    "cmsValue": "WordPress, Joomla",
-    "data": "Data —",
-    "dataValue": "MySQL, PostgreSQL",
-    "deploy": "Deployment —",
-    "deployValue": "Git, CI/CD, SSH"
-  },
   "footer": {
-    "title": "Let's work together",
-    "desc": "Migration, data catalog or custom application — tell me about the need, I'll reply with a concrete plan.",
-    "writeMessage": "Write a message",
+    "title": "Need a Symfony, Django or React developer?",
+    "desc": "Send me the job description: I'll reply within 24 h with a tailored resume.",
+    "writeMessage": "Send a request",
     "whatsapp": "WhatsApp",
     "github": "GitHub",
     "linkedin": "LinkedIn"
@@ -84,16 +109,16 @@
   "contact": {
     "kicker": "Contact",
     "title": "Get in touch",
-    "subtitle": "Reply within 24–48h, at <mono>infos@nosysoatech.com</mono>.",
+    "subtitle": "Reply within 24 h, at <mono>infos@nosysoatech.com</mono>.",
     "name": "Name",
     "email": "Email",
-    "message": "Message",
+    "message": "Message (need, job description, resume request…)",
     "send": "Send",
     "or": "or",
-    "mailtoLink": "Write directly from your mail client",
+    "mailtoLink": "Write directly from your email client",
     "successTitle": "Message sent.",
-    "successDesc": "I'll reply within 24–48h at the address you provided.",
+    "successDesc": "I'll reply within 24 h to the address you provided.",
     "close": "Close",
-    "errorFallback": "Failed to send. Try again or email infos@nosysoatech.com."
+    "errorFallback": "Sending failed. Try again or write to infos@nosysoatech.com."
   }
 }
