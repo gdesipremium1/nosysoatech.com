@@ -10,10 +10,10 @@ import { Resend } from "resend";
 // Le board et l'email sont indépendants : si l'un échoue, l'autre part quand
 // même, et la demande n'est perdue que si les deux échouent.
 
-const FROM = process.env.CONTACT_FROM_EMAIL ?? "infos@nosysoatech.com";
-const TO = process.env.CONTACT_TO_EMAIL ?? "infos@nosysoatech.com";
-const BOARD_URL = (process.env.BOARD_API_URL ?? "https://board.nosysoatech.com").replace(/\/$/, "");
-const BOARD_KEY = process.env.BOARD_API_KEY;
+const FROM = process.env.CONTACT_FROM_EMAIL?.trim() || "infos@nosysoatech.com";
+const TO = process.env.CONTACT_TO_EMAIL?.trim() || "infos@nosysoatech.com";
+const BOARD_URL = (process.env.BOARD_API_URL?.trim() || "https://board.nosysoatech.com").replace(/\/$/, "");
+const BOARD_KEY = process.env.BOARD_API_KEY?.trim();
 
 const PLATFORMS = ["woocommerce", "shopify", "prestashop", "magento", "autre"] as const;
 const CONCERNS = ["lenteur", "ventes", "referencement", "bugs", "autre"] as const;

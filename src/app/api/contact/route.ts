@@ -1,8 +1,10 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
 
-const FROM = process.env.CONTACT_FROM_EMAIL ?? "infos@nosysoatech.com";
-const TO = process.env.CONTACT_TO_EMAIL ?? "infos@nosysoatech.com";
+// "||" et non "??" : une variable définie mais vide (fréquent dans un .env)
+// donnait un expéditeur vide, refusé par Resend (validation_error).
+const FROM = process.env.CONTACT_FROM_EMAIL?.trim() || "infos@nosysoatech.com";
+const TO = process.env.CONTACT_TO_EMAIL?.trim() || "infos@nosysoatech.com";
 
 function escapeHtml(value: string): string {
   return value
