@@ -3,10 +3,29 @@
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
-import { usePathname, useRouter } from "@/i18n/navigation";
+import { Link, usePathname, useRouter } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
 
 const LANG_LABELS: Record<string, string> = { mg: "MG", fr: "FR", en: "EN" };
+
+// Réalisations e-commerce : les projets en direct sont encore en ligne (liens
+// vérifiés le 20/10/2026) ; ceux en sous-traitance sont anonymisés, car le
+// client final appartient à l'agence et la plupart des sites ont depuis changé
+// de plateforme ou fermé.
+const ECOM_DIRECT = [
+  { key: "lecoutzet", url: "https://www.lecoutzet.ch/", stack: ["WordPress", "WooCommerce"] },
+  { key: "qualitativelife", url: "https://clubqualitativelife.com/", stack: ["WordPress", "WooCommerce"] },
+  { key: "villavanille", url: "https://www.villa-vanille.com/", stack: ["WordPress", "Elementor"] },
+] as const;
+
+const ECOM_AGENCY = [
+  { key: "moto", stack: "Magento 2" },
+  { key: "retro", stack: "Magento" },
+  { key: "outlet", stack: "Magento" },
+  { key: "lingerie", stack: "Magento" },
+  { key: "librairie", stack: "Magento" },
+  { key: "presta", stack: "PrestaShop" },
+] as const;
 
 type FormStatus = "idle" | "loading" | "success" | "error";
 
@@ -112,6 +131,7 @@ export default function Home() {
                 <a href="#specialites">{t("nav.specialites")}</a>
                 <a href="#esn">{t("nav.esn")}</a>
                 <a href="#projets">{t("nav.projets")}</a>
+                <a href="#ecommerce">{t("nav.ecommerce")}</a>
                 <a href="#contact">{t("nav.contact")}</a>
               </div>
               <div className="navlangs">
@@ -291,6 +311,70 @@ export default function Home() {
                 </div>
               </div>
               <span className="status live">{t("projets.mag1to2.status")}</span>
+            </div>
+          </div>
+        </section>
+
+        <section id="ecommerce">
+          <div className="sec-head">
+            <span className="kicker">{t("ecommerce.kicker")}</span>
+            <h2>{t("ecommerce.title")}</h2>
+            <p className="sec-desc">{t("ecommerce.desc")}</p>
+          </div>
+
+          <h3 className="ecom-subhead">{t("ecommerce.directTitle")}</h3>
+          <div className="ecom-direct">
+            {ECOM_DIRECT.map((p) => (
+              <a className="ecom-site" key={p.key} href={p.url} target="_blank" rel="noopener">
+                <Image
+                  className="ecom-shot"
+                  src={`/realisations/${p.key}.png`}
+                  alt={t(`ecommerce.direct.${p.key}.name`)}
+                  width={1280}
+                  height={800}
+                  sizes="(max-width: 760px) 100vw, 33vw"
+                />
+                <span className="ecom-site-body">
+                  <b>{t(`ecommerce.direct.${p.key}.name`)}</b>
+                  <span>{t(`ecommerce.direct.${p.key}.desc`)}</span>
+                  <span className="ptags">
+                    {p.stack.map((s) => (
+                      <span key={s}>{s}</span>
+                    ))}
+                  </span>
+                  <span className="ecom-visit">{t("ecommerce.visit")} ↗</span>
+                </span>
+              </a>
+            ))}
+          </div>
+
+          <h3 className="ecom-subhead">{t("ecommerce.agencyTitle")}</h3>
+          <p className="ecom-note">{t("ecommerce.agencyNote")}</p>
+          <div className="ecom-agency">
+            {ECOM_AGENCY.map((c) => (
+              <div className="ecom-case" key={c.key}>
+                <div className="ecom-case-top">
+                  <span className="status wip">{t("ecommerce.badge")}</span>
+                  <span className="ecom-stack">{c.stack}</span>
+                </div>
+                <b>{t(`ecommerce.agency.${c.key}.name`)}</b>
+                <span>{t(`ecommerce.agency.${c.key}.desc`)}</span>
+                <span className="ecom-role">
+                  {t("ecommerce.roleLabel")} : {t(`ecommerce.agency.${c.key}.role`)}
+                </span>
+              </div>
+            ))}
+          </div>
+
+          <div className="ecom-outro">
+            <p>{t("ecommerce.outro")}</p>
+            <div className="cta-row">
+              <Link className="btn ghost" href="/mini-audit">
+                {t("ecommerce.auditCta")}
+              </Link>
+              <button type="button" className="btn primary" onClick={openContact}>
+                {t("ecommerce.cta")}
+              </button>
             </div>
           </div>
         </section>

@@ -7,3 +7,8 @@ services:
       - RESEND_API_KEY=${RESEND_API_KEY}
       - CONTACT_FROM_EMAIL=${CONTACT_FROM_EMAIL}
       - CONTACT_TO_EMAIL=${CONTACT_TO_EMAIL}
+      # Page /mini-audit : enregistrement des demandes dans le board
+      # (clé PROSPECTION_API_KEY du board) et pixel Meta (vide = désactivé).
+      - BOARD_API_URL=${BOARD_API_URL:-https://board.nosysoatech.com}
+      - BOARD_API_KEY=${BOARD_API_KEY:-}
+      - META_PIXEL_ID=${META_PIXEL_ID:-}

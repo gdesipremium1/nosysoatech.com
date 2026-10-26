@@ -7,6 +7,7 @@
     "specialites": "Expertise",
     "esn": "For IT firms",
     "projets": "Projects",
+    "ecommerce": "E-commerce",
     "contact": "Contact",
     "langue": "Language"
   },
@@ -44,7 +45,7 @@
       "title": "Data and reporting",
       "desc": "KPIs, complex queries, Excel imports/exports and large-scale data migrations."
     },
-    "also": "Also: Magento 1/2, PrestaShop, PostgreSQL, Docker, PHPUnit, PHPStan, LDAP / Active Directory"
+    "also": "Also: WordPress / WooCommerce, Magento 1/2, PrestaShop, PostgreSQL, Docker, PHPUnit, PHPStan, LDAP / Active Directory"
   },
   "esn": {
     "kicker": "For IT firms",
@@ -91,6 +92,86 @@
       "name": "mag1to2_migration",
       "desc": "<b>Magento 1 → 2 migration tool</b> with automatic category and product filtering.",
       "status": "MIT license"
+    }
+  },
+  "ecommerce": {
+    "kicker": "E-commerce",
+    "title": "Directly for merchants, as a subcontractor for agencies",
+    "desc": "WordPress, WooCommerce, Magento 1 and 2, PrestaShop: building, taking over and evolving online stores.",
+    "directTitle": "Direct projects, live",
+    "visit": "Visit the site",
+    "direct": {
+      "lecoutzet": { "name": "Le Coutzet", "desc": "Mountain chalet in Switzerland: website, customer accounts and online payment." },
+      "qualitativelife": { "name": "Club Qualitative Life", "desc": "Members area and online store." },
+      "villavanille": { "name": "Villa Vanille", "desc": "Guest house in the south of France." }
+    },
+    "agencyTitle": "As a subcontractor for web agencies",
+    "agencyNote": "Clients and agencies kept anonymous for confidentiality.",
+    "badge": "Agency subcontracting",
+    "roleLabel": "My role",
+    "agency": {
+      "moto": { "name": "Motocross parts and gear", "desc": "Large multi-brand catalogue.", "role": "custom modules, performance" },
+      "retro": { "name": "Classic car parts", "desc": "Part search by vehicle model.", "role": "catalogue, checkout" },
+      "outlet": { "name": "Luxury fashion outlet, Paris", "desc": "Designer clearance, limited stock.", "role": "front-end integration, new features" },
+      "lingerie": { "name": "Lingerie, French brand", "desc": "Brand store with a strong visual identity.", "role": "theme, product pages" },
+      "librairie": { "name": "Specialist bookshop", "desc": "Publishing catalogue and new releases.", "role": "development, maintenance" },
+      "presta": { "name": "PrestaShop stores", "desc": "Several small-business stores.", "role": "modules, themes, fixes" }
+    },
+    "outro": "Agency or IT services firm: I join your team as a white-label developer, with no contact with your clients.",
+    "cta": "Let's talk about your next project",
+    "auditCta": "Free mini-audit of my store"
+  },
+  "audit": {
+    "meta": {
+      "title": "Free mini-audit of your online store — nosysoatech",
+      "description": "Speed, mobile, SEO, checkout: get the 3 priority fixes for your WooCommerce, Shopify, PrestaShop or Magento store within 48 hours."
+    },
+    "back": "← Back to the site",
+    "eyebrow": "Free mini-audit",
+    "title": "Is your online store losing sales without you knowing?",
+    "lead": "I review your store and send you a clear one-page report within 48 hours: what is slowing your sales down, and the 3 fixes to make first. Free, no commitment.",
+    "checks": {
+      "title": "What I check",
+      "speed": { "title": "Speed", "desc": "Real loading time on mobile and desktop, and what weighs it down." },
+      "mobile": { "title": "Mobile experience", "desc": "Readability, buttons, menus: most of your visitors are on a phone." },
+      "seo": { "title": "Technical SEO", "desc": "Titles, descriptions, tags, indexing by Google." },
+      "checkout": { "title": "Checkout", "desc": "The steps that make customers abandon their cart." },
+      "security": { "title": "Updates and security", "desc": "Outdated versions, risky plugins." }
+    },
+    "steps": {
+      "one": "You enter your store's address (1 minute).",
+      "two": "I review your site and send you the report within 48 hours.",
+      "three": "You fix it yourself, or I take care of it for a fixed price agreed upfront."
+    },
+    "who": "Fetraniaina Désiré Rabemanantsoa, web developer since 2012: WooCommerce, Magento, PrestaShop, Symfony. Online stores for merchants and web agencies.",
+    "form": {
+      "title": "Request my mini-audit",
+      "free": "Free · no commitment · reply within 48 hours",
+      "url": "Your store's address",
+      "platform": "Platform",
+      "platforms": { "woocommerce": "WooCommerce", "shopify": "Shopify", "prestashop": "PrestaShop", "magento": "Magento", "autre": "Other / not sure" },
+      "concern": "Your main concern",
+      "concerns": { "lenteur": "Slow website", "ventes": "Few sales, abandoned carts", "referencement": "Google rankings", "bugs": "Bugs or errors", "autre": "Other" },
+      "name": "Your name",
+      "email": "Your email",
+      "message": "Details (optional)",
+      "consent": "I agree to be contacted by email about my request. My data is never sold or used for anything else.",
+      "submit": "Get my mini-audit",
+      "note": "No access to your admin area is needed.",
+      "successTitle": "Request received.",
+      "successDesc": "You will receive your mini-audit by email within 48 hours. A confirmation has just been sent to you.",
+      "successLink": "See my work",
+      "errors": {
+        "generic": "Sending failed. Please try again or write to infos@nosysoatech.com.",
+        "rate": "Too many requests from your connection. Please try again in an hour.",
+        "email": "This email address looks invalid."
+      }
+    },
+    "consent": {
+      "label": "Audience measurement",
+      "text": "I use a Meta pixel to measure how well my ads perform. It only loads with your consent.",
+      "accept": "Accept",
+      "deny": "Decline"
     }
   },
   "footer": {

@@ -7,6 +7,7 @@
     "specialites": "Expertise",
     "esn": "ESN et régie",
     "projets": "Projets",
+    "ecommerce": "E-commerce",
     "contact": "Contact",
     "langue": "Langue"
   },
@@ -44,7 +45,7 @@
       "title": "Data et reporting",
       "desc": "Indicateurs, requêtes complexes, imports/exports Excel et migrations de données à grande échelle."
     },
-    "also": "Aussi : Magento 1/2, PrestaShop, PostgreSQL, Docker, PHPUnit, PHPStan, LDAP / Active Directory"
+    "also": "Aussi : WordPress / WooCommerce, Magento 1/2, PrestaShop, PostgreSQL, Docker, PHPUnit, PHPStan, LDAP / Active Directory"
   },
   "esn": {
     "kicker": "ESN et régie",
@@ -91,6 +92,86 @@
       "name": "mag1to2_migration",
       "desc": "<b>Outil de migration Magento 1 → 2</b> avec autofiltre des catégories et des produits.",
       "status": "Licence MIT"
+    }
+  },
+  "ecommerce": {
+    "kicker": "E-commerce",
+    "title": "En direct pour des marchands, en sous-traitance pour des agences",
+    "desc": "WordPress, WooCommerce, Magento 1 et 2, PrestaShop : création, reprise et évolution de boutiques en ligne.",
+    "directTitle": "Projets en direct, en ligne",
+    "visit": "Voir le site",
+    "direct": {
+      "lecoutzet": { "name": "Le Coutzet", "desc": "Chalet en Suisse : site vitrine, compte client et paiement en ligne." },
+      "qualitativelife": { "name": "Club Qualitative Life", "desc": "Espace membres et boutique en ligne." },
+      "villavanille": { "name": "Villa Vanille", "desc": "Chambres et maison d'hôtes dans l'Hérault." }
+    },
+    "agencyTitle": "En sous-traitance pour des agences web",
+    "agencyNote": "Clients et agences anonymisés par confidentialité.",
+    "badge": "Sous-traitance agence",
+    "roleLabel": "Mon rôle",
+    "agency": {
+      "moto": { "name": "Pièces et équipement motocross", "desc": "Grand catalogue multi-marques.", "role": "modules sur mesure, performances" },
+      "retro": { "name": "Pièces pour voitures anciennes", "desc": "Recherche des pièces par modèle de véhicule.", "role": "catalogue, tunnel de commande" },
+      "outlet": { "name": "Outlet mode de luxe, Paris", "desc": "Déstockage de grandes marques, stocks limités.", "role": "intégration, évolutions" },
+      "lingerie": { "name": "Lingerie, marque française", "desc": "Boutique de marque au fort univers visuel.", "role": "thème, fiches produits" },
+      "librairie": { "name": "Librairie spécialisée", "desc": "Catalogue éditorial et nouveautés.", "role": "développement, maintenance" },
+      "presta": { "name": "Boutiques PrestaShop", "desc": "Plusieurs boutiques de PME.", "role": "modules, thèmes, correctifs" }
+    },
+    "outro": "Agence ou ESN : je m'intègre à votre équipe, en marque blanche, sans contact avec vos clients.",
+    "cta": "Parlons de votre prochain projet",
+    "auditCta": "Mini-audit gratuit de ma boutique"
+  },
+  "audit": {
+    "meta": {
+      "title": "Mini-audit gratuit de votre boutique en ligne — nosysoatech",
+      "description": "Vitesse, mobile, référencement, tunnel de commande : recevez sous 48 h les 3 corrections prioritaires pour votre boutique WooCommerce, Shopify, PrestaShop ou Magento."
+    },
+    "back": "← Retour au site",
+    "eyebrow": "Mini-audit gratuit",
+    "title": "Votre boutique perd-elle des ventes sans que vous le sachiez ?",
+    "lead": "J'analyse votre boutique et je vous envoie sous 48 h un rapport clair d'une page : ce qui ralentit vos ventes, et les 3 corrections à faire en priorité. Gratuit et sans engagement.",
+    "checks": {
+      "title": "Ce que je vérifie",
+      "speed": { "title": "Vitesse", "desc": "Temps de chargement réel sur mobile et ordinateur, et ce qui l'alourdit." },
+      "mobile": { "title": "Expérience mobile", "desc": "Lisibilité, boutons, menus : la majorité de vos visiteurs sont sur téléphone." },
+      "seo": { "title": "Référencement technique", "desc": "Titres, descriptions, balises, indexation par Google." },
+      "checkout": { "title": "Tunnel de commande", "desc": "Les étapes qui font abandonner un panier." },
+      "security": { "title": "Mises à jour et sécurité", "desc": "Versions dépassées, extensions à risque." }
+    },
+    "steps": {
+      "one": "Vous indiquez l'adresse de votre boutique (1 minute).",
+      "two": "J'analyse votre site et je vous envoie le rapport sous 48 h.",
+      "three": "Vous corrigez vous-même, ou je m'en charge au forfait, prix fixé à l'avance."
+    },
+    "who": "Fetraniaina Désiré Rabemanantsoa, développeur web depuis 2012 : WooCommerce, Magento, PrestaShop, Symfony. Boutiques en ligne pour des marchands et des agences web françaises.",
+    "form": {
+      "title": "Demander mon mini-audit",
+      "free": "Gratuit · sans engagement · réponse sous 48 h",
+      "url": "Adresse de votre boutique",
+      "platform": "Plateforme",
+      "platforms": { "woocommerce": "WooCommerce", "shopify": "Shopify", "prestashop": "PrestaShop", "magento": "Magento", "autre": "Autre / je ne sais pas" },
+      "concern": "Votre souci principal",
+      "concerns": { "lenteur": "Site lent", "ventes": "Peu de ventes, paniers abandonnés", "referencement": "Référencement Google", "bugs": "Bugs ou erreurs", "autre": "Autre" },
+      "name": "Votre nom",
+      "email": "Votre email",
+      "message": "Précisions (facultatif)",
+      "consent": "J'accepte d'être recontacté par email au sujet de ma demande. Mes données ne sont ni revendues ni utilisées à d'autres fins.",
+      "submit": "Recevoir mon mini-audit",
+      "note": "Aucun accès à votre administration n'est nécessaire.",
+      "successTitle": "Demande bien reçue.",
+      "successDesc": "Vous recevrez votre mini-audit par email sous 48 heures. Un accusé de réception vient de vous être envoyé.",
+      "successLink": "Voir mes réalisations",
+      "errors": {
+        "generic": "L'envoi a échoué. Réessayez ou écrivez à infos@nosysoatech.com.",
+        "rate": "Trop de demandes depuis votre connexion. Réessayez dans une heure.",
+        "email": "Cette adresse email semble invalide."
+      }
+    },
+    "consent": {
+      "label": "Mesure d'audience",
+      "text": "J'utilise un pixel Meta pour mesurer l'efficacité de mes publicités. Il n'est chargé qu'avec votre accord.",
+      "accept": "Accepter",
+      "deny": "Refuser"
     }
   },
   "footer": {

@@ -7,6 +7,7 @@
     "specialites": "Fahaizana",
     "esn": "ESN sy régie",
     "projets": "Tetikasa",
+    "ecommerce": "E-commerce",
     "contact": "Fifandraisana",
     "langue": "Fiteny"
   },
@@ -44,7 +45,7 @@
       "title": "Angona sy tatitra",
       "desc": "Tondro, fikarohana sarotra, fanafarana sy fandefasana Excel ary famindrana angona lehibe."
     },
-    "also": "Ary koa: Magento 1/2, PrestaShop, PostgreSQL, Docker, PHPUnit, PHPStan, LDAP / Active Directory"
+    "also": "Ary koa: WordPress / WooCommerce, Magento 1/2, PrestaShop, PostgreSQL, Docker, PHPUnit, PHPStan, LDAP / Active Directory"
   },
   "esn": {
     "kicker": "ESN sy régie",
@@ -91,6 +92,86 @@
       "name": "mag1to2_migration",
       "desc": "<b>Fitaovana famindrana Magento 1 → 2</b> miaraka amin'ny sivana ho azy ny sokajy sy ny vokatra.",
       "status": "Fahazoan-dàlana MIT"
+    }
+  },
+  "ecommerce": {
+    "kicker": "E-commerce",
+    "title": "Mivantana ho an'ny mpivarotra, amin'ny alalan'ny sous-traitance ho an'ny masoivoho",
+    "desc": "WordPress, WooCommerce, Magento 1 sy 2, PrestaShop: famoronana, fandraisana sy fanatsarana fivarotana an-tserasera.",
+    "directTitle": "Tetikasa mivantana, mbola miasa",
+    "visit": "Hijery ny tranonkala",
+    "direct": {
+      "lecoutzet": { "name": "Le Coutzet", "desc": "Trano an-tendrombohitra any Soisa: tranonkala, kaontin'ny mpanjifa ary fandoavam-bola an-tserasera." },
+      "qualitativelife": { "name": "Club Qualitative Life", "desc": "Faritra ho an'ny mpikambana sy fivarotana an-tserasera." },
+      "villavanille": { "name": "Villa Vanille", "desc": "Trano fandraisana vahiny any amin'ny faritra Hérault, Frantsa." }
+    },
+    "agencyTitle": "Sous-traitance ho an'ny masoivoho web",
+    "agencyNote": "Tsy atonta ny anaran'ny mpanjifa sy ny masoivoho noho ny tsiambaratelo.",
+    "badge": "Sous-traitance masoivoho",
+    "roleLabel": "Ny anjarako",
+    "agency": {
+      "moto": { "name": "Kojakoja sy fitaovana motocross", "desc": "Katalaogy lehibe marika maro.", "role": "modules namboarina manokana, hafainganam-pandeha" },
+      "retro": { "name": "Kojakoja ho an'ny fiara taloha", "desc": "Fikarohana kojakoja araka ny karazam-piara.", "role": "katalaogy, dingana fividianana" },
+      "outlet": { "name": "Outlet lamaody lafo vidy, Paris", "desc": "Fivarotana marika malaza, tahiry voafetra.", "role": "fampidirana, fanatsarana" },
+      "lingerie": { "name": "Akanjo anatiny, marika frantsay", "desc": "Fivarotan'ny marika manana endrika miavaka.", "role": "lohahevitra, takelaka vokatra" },
+      "librairie": { "name": "Fivarotam-boky manokana", "desc": "Katalaogin'ny boky sy ny vao navoaka.", "role": "fampandrosoana, fikojakojana" },
+      "presta": { "name": "Fivarotana PrestaShop", "desc": "Fivarotana maromaro ho an'ny orinasa madinika.", "role": "modules, lohahevitra, fanitsiana" }
+    },
+    "outro": "Masoivoho na ESN: miditra ao amin'ny ekipanareo aho, amin'ny marque blanche, tsy mifandray amin'ny mpanjifanareo.",
+    "cta": "Andao hiresaka momba ny tetikasanareo manaraka",
+    "auditCta": "Fanadihadiana maimaim-poana ny fivarotako"
+  },
+  "audit": {
+    "meta": {
+      "title": "Fanadihadiana maimaim-poana ny fivarotanao an-tserasera — nosysoatech",
+      "description": "Hafainganam-pandeha, finday, SEO, dingana fividianana: mahazo ireo fanitsiana 3 tokony hatao voalohany ao anatin'ny 48 ora ho an'ny fivarotanao WooCommerce, Shopify, PrestaShop na Magento."
+    },
+    "back": "← Hiverina amin'ny tranonkala",
+    "eyebrow": "Fanadihadiana maimaim-poana",
+    "title": "Very varotra ve ny fivarotanao nefa tsy fantatrao?",
+    "lead": "Dinihiko ny fivarotanao ary alefako aminao ao anatin'ny 48 ora ny tatitra mazava iray pejy: izay manakana ny varotrao, sy ireo fanitsiana 3 tokony hatao voalohany. Maimaim-poana ary tsy misy fifanekena.",
+    "checks": {
+      "title": "Izay dinihiko",
+      "speed": { "title": "Hafainganam-pandeha", "desc": "Fotoana tena ilaina hisokafan'ny pejy amin'ny finday sy ordinatera, sy izay manavesatra azy." },
+      "mobile": { "title": "Fampiasana amin'ny finday", "desc": "Fahamoran'ny famakiana, bokotra, menio: amin'ny finday ny ankamaroan'ny mpitsidika anao." },
+      "seo": { "title": "SEO ara-teknika", "desc": "Lohateny, famaritana, balizy, fanondroana ataon'i Google." },
+      "checkout": { "title": "Dingana fividianana", "desc": "Ireo dingana mahatonga ny mpividy handao ny sobiny." },
+      "security": { "title": "Fanavaozana sy fiarovana", "desc": "Dikan-teny efa tranainy, fanampiny mampidi-doza." }
+    },
+    "steps": {
+      "one": "Soratanao ny adiresin'ny fivarotanao (1 minitra).",
+      "two": "Dinihiko ny tranonkalanao ary alefako aminao ny tatitra ao anatin'ny 48 ora.",
+      "three": "Ianao no manitsy, na izaho no manao izany amin'ny vidiny raikitra efa nifanarahana mialoha."
+    },
+    "who": "Fetraniaina Désiré Rabemanantsoa, mpamorona tranonkala hatramin'ny 2012: WooCommerce, Magento, PrestaShop, Symfony. Fivarotana an-tserasera ho an'ny mpivarotra sy masoivoho web.",
+    "form": {
+      "title": "Hangataka ny fanadihadiana",
+      "free": "Maimaim-poana · tsy misy fifanekena · valiny ao anatin'ny 48 ora",
+      "url": "Adiresin'ny fivarotanao",
+      "platform": "Sehatra",
+      "platforms": { "woocommerce": "WooCommerce", "shopify": "Shopify", "prestashop": "PrestaShop", "magento": "Magento", "autre": "Hafa / tsy fantatro" },
+      "concern": "Olana lehibe indrindra",
+      "concerns": { "lenteur": "Tranonkala miadana", "ventes": "Varotra vitsy, sobika avela", "referencement": "Laharana ao amin'i Google", "bugs": "Bug na hadisoana", "autre": "Hafa" },
+      "name": "Anaranao",
+      "email": "Mailakao",
+      "message": "Fanazavana fanampiny (tsy voatery)",
+      "consent": "Manaiky aho ny hifandraisana amiko amin'ny mailaka momba ity fangatahana ity. Tsy amidy na ampiasaina amin'ny zavatra hafa ny angon-drakitro.",
+      "submit": "Handray ny fanadihadiana",
+      "note": "Tsy ilaina ny fidirana amin'ny fitantananao.",
+      "successTitle": "Voaray ny fangatahanao.",
+      "successDesc": "Ho voarainao amin'ny mailaka ao anatin'ny 48 ora ny fanadihadiana. Nalefa taminao ny fanamarinana fa voaray izany.",
+      "successLink": "Hijery ny asako",
+      "errors": {
+        "generic": "Tsy lasa ny fandefasana. Andramo indray na manorata amin'ny infos@nosysoatech.com.",
+        "rate": "Be loatra ny fangatahana avy amin'ny fifandraisanao. Andramo indray afaka iray ora.",
+        "email": "Toa diso io adiresy mailaka io."
+      }
+    },
+    "consent": {
+      "label": "Fandrefesana mpitsidika",
+      "text": "Mampiasa pixel Meta aho handrefesana ny vokatry ny dokambarotro. Tsy alaina raha tsy manaiky ianao.",
+      "accept": "Manaiky",
+      "deny": "Tsy manaiky"
     }
   },
   "footer": {
